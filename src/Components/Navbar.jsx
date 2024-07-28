@@ -1,14 +1,24 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
 export default function Navbar() {
 
     const [navOpen, setNavOpen] = useState(false)
+    const [smallNav, setSmallNav] = useState(false)
     
+    function scroll() {
+        if (window.scrollY>30) {
+            setSmallNav(true)
+        }else{
+            setSmallNav(false)
+        }
+    }
+    window.addEventListener('scroll', scroll);
+          
   return (
     <>             
         <nav className="fixed top-0 z-50 w-full bg-secondColor text-white border-gray-200 dark:bg-gray-900">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-8 px-3">
+        <div className={`max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ${smallNav? "py-5":"py-10"} duration-500 px-3`}>
             <Link to="">
             <span className="self-center text-3xl font-bold whitespace-nowrap dark:text-white">START FRAMEWORK</span>
             </Link>
