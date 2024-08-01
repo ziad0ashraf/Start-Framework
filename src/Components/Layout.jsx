@@ -7,7 +7,7 @@ export default function Layout() {
   return (
     <>
         <Navbar/>
-            <Outlet className=" mt-20"></Outlet>
+            <Outlet></Outlet>
         <Footer/>
     </>
   )

@@ -16,10 +16,10 @@ export default function Footer() {
                     <div>
                         <h3 className='text-3xl font-semibold'>AROUND THE WEB</h3>
                         <div className='flex justify-center gap-3 my-3 cursor-pointer'>
-                        <FaFacebook className='border-1 p-2 text-4xl rounded-full'/>
-                        <FaTwitter className='border-1 p-2 text-4xl rounded-full'/>
-                        <FaLinkedin className='border-1 p-2 text-4xl rounded-full'/>
-                        <TbWorld className='border-1 p-2 text-4xl rounded-full'/>
+                        <FaFacebook className='hover:bg-mainColor duration-300 border-1 p-2 text-4xl rounded-full'/>
+                        <FaTwitter className='hover:bg-mainColor duration-300 border-1 p-2 text-4xl rounded-full'/>
+                        <FaLinkedin className='hover:bg-mainColor duration-300 border-1 p-2 text-4xl rounded-full'/>
+                        <TbWorld className='hover:bg-mainColor duration-300 border-1 p-2 text-4xl rounded-full'/>
                         </div>
                     </div>
                     <div>

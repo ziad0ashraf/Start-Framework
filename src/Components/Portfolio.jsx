@@ -26,11 +26,11 @@ export default function Portfolio() {
                 <div className='h-1 w-24 bg-secondColor'></div>
               </div>
             </div>
-            <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-12'>
+            <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10'>
               {[port1, port2, port3, port1, port2, port3].map((src, index) => (
                 <div key={index} className='relative cursor-pointer'>
                   <img className='rounded-xl' src={src} alt="" />
-                  <div onClick={() => getSrc(src)} className='rounded-2xl bg-mainColor w-full h-full z-30 absolute top-0 opacity-0 hover:opacity-90 duration-500 flex items-center justify-center'>
+                  <div onClick={() => getSrc(src)} className='rounded-xl bg-mainColor w-full h-full z-30 absolute top-0 opacity-0 hover:opacity-90 duration-500 flex items-center justify-center'>
                     <FaPlus className='text-9xl text-white'/>
                   </div>
                 </div>
@@ -39,7 +39,7 @@ export default function Portfolio() {
           </div>
           <div className={`fixed h-full w-full z-50 top-0 left-0 bg-rgbaMainColor ${boxImg ? "flex" : "hidden"} justify-center items-center`}>
             <div onClick={() => setBoxImg(!boxImg)} className="container flex justify-center">
-              <img className='rounded-2xl lg:w-1/2' src={Image} alt="" />
+              <img className='rounded-md lg:w-1/2' src={Image} alt="" />
             </div>
           </div>
         </section>
