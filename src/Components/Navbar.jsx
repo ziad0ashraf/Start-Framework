@@ -17,7 +17,7 @@ export default function Navbar() {
           
   return (
     <>             
-        <nav className="fixed top-0 z-50 w-full bg-secondColor text-white border-gray-200 dark:bg-gray-900">
+        <nav className="fixed top-0 z-50 w-full bg-secondColor text-white border-gray-200 ">
         <div className={`max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ${smallNav? "py-5":"py-10"} duration-500 px-3`}>
             <Link to="">
             <span className="self-center text-3xl font-bold whitespace-nowrap dark:text-white">START FRAMEWORK</span>
@@ -29,7 +29,7 @@ export default function Navbar() {
                 </svg>
             </button>
             <div className={`${navOpen?"max-h-screen":"max-h-0"} duration-500 overflow-hidden md:max-h-full`} id="navbar-default">
-                <ul className="uppercase text-md font-bold flex flex-col p-4 md:p-0 mt-4  border-gray-100 rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <ul className="uppercase text-md font-bold flex flex-col p-4 md:p-0 mt-4  border-gray-100 rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
                     <li>
                     <NavLink to="about" className="block py-2 px-3 rounded">about</NavLink>
                     </li>
