@@ -3,11 +3,11 @@ import Home from './Components/Home'
 import About from './Components/About'
 import Portfolio from './Components/Portfolio'
 import Contact from './Components/Contact'
-import { createHashRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './Components/Layout'
 import Notfound from './Components/Notfound'
 
-  let router=createHashRouter([
+  let router=createBrowserRouter([
     {path:'',element:<Layout/>,children:[
       {index:true ,element:<Home/>},
       {path:'about',element:<About/>},
