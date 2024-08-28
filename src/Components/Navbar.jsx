@@ -17,7 +17,7 @@ export default function Navbar() {
           
   return (
     <>             
-        <nav className="fixed top-0 z-50 w-full bg-secondColor text-white border-gray-200 ">
+        <nav className="fixed top-0 z-50 w-full bg-secondColor text-white border-gray-200">
         <div className={`max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ${smallNav? "py-5":"py-10"} duration-500 px-3`}>
             <Link to="">
             <span className="self-center text-3xl font-bold whitespace-nowrap dark:text-white">START FRAMEWORK</span>
